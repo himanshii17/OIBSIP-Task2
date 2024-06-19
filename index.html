@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Personal Portfolio</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/1a724a4aaf.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <!-- home page  -->
+  <!-- navbar -->
+  <div class="full">
+    <nav id="navbar">
+      <div id="container">
+        <h1 class="logo">PORTFOLIO</h1>
+      </div>
+      <ul id="sidemenu" class="list-class">
+        <li><a href="#container">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#portfolio">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+      </ul>
+      <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+
+    </nav>
+    <!-- image -->
+    <div class="container1">
+      <div class="header-text">
+        <p>Full Stack Developer</p>
+        <h1>Hi,I am <span>Himanshi</span><br>Sharma from India</h1>
+      </div>
+
+      <div id="image_bitemogi">
+        <img src="hi.png" alt="i am himanshi">
+      </div>
+    </div>
+  </div>
+  <!-- about section -->
+  <div id="about">
+    <div class="container2">
+      <div class="row">
+        <div class="about-col-1">
+          <img src="image.jpeg" alt="himanshi">
+        </div>
+        <div class="about-col-2">
+          <h1 class="sub-title">About Me</h1>
+          <p>My name is Himanshi Sharma and i am an undergraduate student pursuing Btech CSE from DIT University,
+            Dehradun.Currently i have my hands on real time projects in domains including data science and full stack
+            development.I have keen interest in programming and looking forward for great opportunities.
+          </p>
+          <div class="tab-titles">
+            <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+            <p class="tab-links" onclick="opentab('experience')">Experience</p>
+            <p class="tab-links" onclick="opentab('education')">Education</p>
+          </div>
+          <div class="tab-contents active-tab" id="skills">
+          <ul>
+            <li><span>JAVA</span><br>Programming language</li>
+            <li><span>PYTHON</span><br>Programming language</li>
+            <li><span>C</span><br>Programming language</li>
+          </ul>
+          </div>
+          <div class="tab-contents" id="experience">
+            <ul>
+              <li><span>Current</span><br>full stack training in dit university</li>
+              <li><span>Current</span><br>full stack training in dit university</li>
+              <li><span>Current</span><br>full stack training in dit university</li>
+            </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>Higher Secondary Education</span><br>GRD Academy</li>
+                <li><span>Higher Secondary Education</span><br>GRD Academy</li>
+                <li><span>Btech in Computer Science</span><br>DIT University</li>
+              </ul>
+              </div>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!--------------------------- services ---------------------------->
+  <div id="services">
+    <div class="contain">
+      <h1 class="sub-title">My Services</h1>
+      <div class="services-list">
+        <div>
+          <i class="fa-solid fa-code"></i>
+          <h2>Web Design</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam totam commodi dolores vero.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-solid fa-magnifying-glass-chart"></i>
+          <h2>Data Analytics</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam totam commodi dolores vero.</p>
+          <a href="#">Learn More</a>
+        </div>
+        <div>
+          <i class="fa-brands fa-app-store"></i>
+          <h2>Data Analytics</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe aliquam totam commodi dolores vero.</p>
+          <a href="#">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ---------------------portfolio--------------- -->
+  <div id="portfolio">
+    <div class="contain">
+      <h1 class="sub-title">My Work</h1>
+      <div class="work-list">
+        <div class="work">
+          <img src="Sentiment-analysis-img1.jpg">
+          <div class="layer">
+            <h3>Sentiment Analysis</h3>
+            <p>This will help to analyze human emotions.</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="web-development-img3.webp">
+          <div class="layer">
+            <h3>Clothing Website</h3>
+            <p>An e-commerce website for online shopping</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+        <div class="work">
+          <img src="chatbot-img2.webp">
+          <div class="layer">
+            <h3>Chatbot</h3>
+            <p>An intelligent AI chatbot which will solve your problems</p>
+            <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+          </div>
+        </div>
+      </div>
+      <a href="#" class="btn">See More</a>
+    </div>
+  </div>
+
+  <!-- --------------contact---------- -->
+  <div id="contact">
+    <div class="contain">
+      <div class="row">
+        <div class="contact-left">
+          <h1 class="sub-title">Contact Me</h1>
+          <p><i class="fa-solid fa-paper-plane"></i>shimanshi871@gmail.com</p>
+          <p><i class="fa-solid fa-square-phone"></i>7017748803</p>
+          <div class="social-icons">
+            <a href="https://www.linkedin.com/in/himanshi-sharma-9623b8235/"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.instagram.com/"><i class="fa-brands fa-instagram"></i></a>
+          </div>
+          <a href="Resume_new.pdf" download class="btn btn2">Download CV</a>
+        </div>
+        <div class="contact-right">
+          <form name="submit-to-google-sheet">
+            <input type="text" name="Name" placeholder="Your Name" required>
+            <input type="email" name="Email" placeholder="Your Email" required>
+            <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+            <button type="submit" class="btn btn2">Submit</button>
+          </form>
+          <span id="msg"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="copyright">
+    <p>Copyright © Himanshi . All Rights Reserved</p>
+  </div>
+  <script>
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+    function opentab(tabname){
+      for(tablink of tablinks){
+        tablink.classList.remove("active-link");
+      }
+      for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab");
+      }
+      event.currentTarget.classList.add("active-link");
+      document.getElementById(tabname).classList.add("active-tab");
+    }
+  </script>
+  <!-- --------------sidemenu----------------- -->
+  <script>
+    var sidemen = document.getElementById("sidemenu");
+    function openmenu(){
+      sidemen.style.right = "0";
+    }
+    function closemenu(){
+      sidemen.style.right = "-200px";
+    }
+  </script>
+  <script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzTmsZnyCCsPvWSHQw7Ru_ZlS1El4fWAykeguitkMEJo1F97eRSKI7ieb5eOBJlnaPM/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg= document.getElementById("msg")
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+          msg.innerHTML="Your response has been submitted successfully"
+          setTimeout(function(){
+            msg.innerHTML=""
+          },5000)
+          form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+
+</html>
